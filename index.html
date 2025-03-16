@@ -76,6 +76,43 @@
             transform: scale(1.05);
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
         }
+        .contacts {
+            background-color: #fbf8ef; /* Light cream */
+            padding: 3rem;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contacts h2 {
+            margin-bottom: 2rem;
+        }
+        .contacts p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 0.5rem 0;
+        }
+        .contacts a {
+            color: #5e5c55;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contacts a:hover {
+            color: #a49681; /* Softer muted beige */
+        }
+        .button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #e9e4d8;
+            color: #5e5c55;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+            margin-top: 1.5rem;
+        }
+        .button:hover {
+            background-color: #c6a57d;
+        }
         footer {
             background-color: #e9e4d8; /* Muted beige footer */
             color: #5e5c55;
@@ -95,10 +132,8 @@
 
     <!-- Navigation Bar -->
     <nav>
-        <a href="#why-book">Why Book With Us?</a>
         <a href="#gallery">Gallery</a>
-        <a href="#comfort">Comfort</a>
-        <a href="#contact">Contact</a>
+        <a href="#contacts">Contact Us</a>
     </nav>
 
     <!-- Gallery Section -->
@@ -110,6 +145,17 @@
         <img src="destination2.jpg" alt="Vibrant Cityscape">
         <img src="destination3.jpg" alt="Scenic Mountain View">
         <img src="destination4.jpg" alt="Heritage Site">
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section contacts" id="contacts">
+        <h2>📞 Contact Us</h2>
+        <p><strong>📍 Address:</strong> Dasmariñas, Cavite, Philippines</p>
+        <p><strong>📞 Phone:</strong> +63 945 986 9989</p>
+        <p><strong>📧 Email:</strong> <a href="mailto:aiotraveltours@gmail.com">aiotraveltours@gmail.com</a></p>
+        <p><strong>💬 Facebook:</strong> <a href="https://www.facebook.com/people/Aio-Phil-Travel-and-Tours/61560532989512/" target="_blank">Aio Phil Travel and Tours</a></p>
+        <p><strong>📷 Instagram:</strong> @aiophiltravelandtours_</p>
+        <a class="button" href="https://www.facebook.com/people/Aio-Phil-Travel-and-Tours/61560532989512/" target="_blank">Book Now</a>
     </div>
 
     <!-- Footer Section -->
