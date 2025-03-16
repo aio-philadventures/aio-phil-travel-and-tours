@@ -57,22 +57,6 @@
             from { opacity: 0; }
             to { opacity: 1; }
         }
-        .why-book, .comfort {
-            background-color: #fbf8ef; /* Light cream */
-            border-radius: 10px;
-            padding: 3rem;
-            margin-bottom: 3rem;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        .why-book h2, .comfort h2 {
-            margin-bottom: 1.5rem;
-        }
-        .why-book p, .comfort p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            text-align: justify;
-            margin-bottom: 1rem;
-        }
         .gallery {
             display: flex;
             overflow-x: scroll;
@@ -86,6 +70,11 @@
             height: 200px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
         }
         footer {
             background-color: #e9e4d8; /* Muted beige footer */
@@ -112,34 +101,18 @@
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Why Book With Us Section -->
-    <div class="section why-book" id="why-book">
-        <h2>Why Choose Aio Phil Travel and Tours? 🌟</h2>
-        <p>
-            At Aio Phil Travel and Tours, we go beyond offering travel packages—we deliver experiences that transform your journey into unforgettable adventures.
-        </p>
-        <p>
-            Our tours capture the essence of every destination, designed to leave you in awe while providing unmatched comfort and reliability.
-        </p>
-    </div>
-
     <!-- Gallery Section -->
     <div class="gallery" id="gallery">
-        <img src="beach.jpg" alt="Beautiful Beach Destination"> <!-- Integrated your image -->
+        <!-- Destination 1: Clickable Image -->
+        <a href="https://www.facebook.com/photo.php?fbid=122109437798351099&set=pb.61560532989512.-2207520000&type=3" target="_blank">
+            <img src="beach.jpg" alt="Beautiful Beach Destination">
+        </a>
         <img src="destination2.jpg" alt="Vibrant Cityscape">
         <img src="destination3.jpg" alt="Scenic Mountain View">
         <img src="destination4.jpg" alt="Heritage Site">
     </div>
 
-    <!-- Comfort and Convenience Section -->
-    <div class="section comfort" id="comfort">
-        <h2>Travel in Comfort and Style 🛫</h2>
-        <p>
-            Imagine a journey where every detail is taken care of for you. With Aio Phil Travel and Tours, you'll experience unparalleled comfort, luxury, and convenience.
-        </p>
-    </div>
-
-    <!-- Contact Section -->
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Aio Phil Travel and Tours. All Rights Reserved.</p>
         <p>Travel with us for experiences that last a lifetime.</p>
