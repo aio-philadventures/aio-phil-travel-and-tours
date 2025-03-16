@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aio Phil Travel and Tours</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-image: linear-gradient(to right, #004aad, #008cff);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        nav {
+            background-color: #004aad;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f3c623;
+        }
+        .section {
+            padding: 3rem;
+        }
+        .services {
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+        .card {
+            background: linear-gradient(to right, #004aad, #008cff);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            width: 250px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        .about {
+            background: linear-gradient(to top, #d9e4ec, #eef2f3);
+            text-align: left;
+            padding: 3rem 5rem;
+        }
+        .about p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .contact {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 3rem;
+        }
+        .contact div {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+        .contact div:hover {
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            background-color: #004aad;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        footer a {
+            color: #f3c623;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Aio Phil Travel and Tours</h1>
+        <p>Explore the world with us!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Services Section -->
+    <div class="section services" id="services">
+        <div class="card">
+            <h3>Adventure Tours</h3>
+            <p>Explore breathtaking destinations and enjoy thrilling adventures!</p>
+        </div>
+        <div class="card">
+            <h3>Relaxation Getaways</h3>
+            <p>Take a break and unwind in our handpicked serene locations.</p>
+        </div>
+        <div class="card">
+            <h3>Group Packages</h3>
+            <p>Travel with your loved ones with our special group deals.</p>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="section about" id="about">
+        <h2>About Aio Phil Travel and Tours</h2>
+        <p>
+            At Aio Phil Travel and Tours, we are passionate about curating experiences that leave a lasting impact. From the sandy beaches of the Philippines to bustling city escapes, we make your travel dreams a reality. Let us take care of the details while you focus on making memories.
+        </p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section contact" id="contact">
+        <div>
+            <h3>📍 Visit Us</h3>
+            <p>Dasmariñas, Cavite, Philippines</p>
+        </div>
+        <div>
+            <h3>📞 Call Us</h3>
+            <p>+63 945 986 9989</p>
+        </div>
+        <div>
+            <h3>📧 Email Us</h3>
+            <p><a href="mailto:aiotraveltours@gmail.com">aiotraveltours@gmail.com</a></p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Aio Phil Travel and Tours. All Rights Reserved.</p>
+        <p>Designed with 💖 for passionate travelers</p>
+    </footer>
+</body>
+</html>
