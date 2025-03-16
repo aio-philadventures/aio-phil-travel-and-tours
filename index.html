@@ -123,6 +123,18 @@
             text-align: center;
             padding: 2rem;
         }
+        /* Style for registration form */
+        .form-container {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        form input, form button {
+            margin: 0.5rem;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -167,34 +179,17 @@
         </p>
     </div>
 
-    <!-- FAQ Section -->
-    <div class="section faqs" id="faqs">
-        <h2>FAQs: Frequently Asked Questions</h2>
-        <div class="faq-item">
-            <h3>How easy is it to book with AIO Phil Travel and Tours?</h3>
-            <p>It’s incredibly easy! You can contact us via phone, email, or social media to reserve your spot. Our friendly team is always ready to assist you!</p>
-        </div>
-        <div class="faq-item">
-            <h3>What services do you offer?</h3>
-            <p>We provide diverse travel packages, including beach getaways, heritage tours, city adventures, and more. Our packages cater to solo travelers, families, and groups.</p>
-        </div>
-        <div class="faq-item">
-            <h3>Are your tours customizable?</h3>
-            <p>Yes! We specialize in crafting personalized tours tailored to your preferences and interests. Let us know your travel goals, and we’ll make them happen.</p>
-        </div>
-    </div>
-
-    <!-- Testimonials Section -->
-    <div class="section testimonials" id="testimonials">
-        <h2>What Our Customers Say ❤️</h2>
-        <div class="testimonial-item">
-            <h3>Maria S.</h3>
-            <p>"Booking with AIO Phil Travel and Tours was the best decision I made this year. The team was professional and friendly, and I had the trip of a lifetime!"</p>
-        </div>
-        <div class="testimonial-item">
-            <h3>Juan D.</h3>
-            <p>"Seamless and stress-free! From the moment I contacted them to the end of my trip, everything was handled perfectly. Highly recommended!"</p>
-        </div>
+    <!-- Registration Form Section -->
+    <div class="form-container" id="register">
+        <h2>Register Your Travel Details ✈️</h2>
+        <form action="http://localhost:3000/register" method="POST">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="number" placeholder="Phone Number" required>
+            <input type="date" name="start_date" required>
+            <input type="date" name="end_date" required>
+            <button type="submit">Register Now</button>
+        </form>
     </div>
 
     <!-- Contact Section -->
@@ -202,18 +197,12 @@
         <h2>📞 Contact Us</h2>
         <p><strong>📍 Address:</strong> Cavite, Dasmariñas, Philippines</p>
         <p><strong>📞 Phone:</strong> +63 945 986 9989</p>
-        <p><strong>📧 Email:</strong> <a href
         <p><strong>📧 Email:</strong> <a href="mailto:aiotraveltours@gmail.com">aiotraveltours@gmail.com</a></p>
         <p><strong>💬 Facebook:</strong> <a href="https://www.facebook.com/people/Aio-Phil-Travel-and-Tours/61560532989512/" target="_blank">Aio Phil Travel and Tours</a></p>
         <p><strong>📷 Instagram:</strong> @aiophiltravelandtours_</p>
-        <a class="button" href="https://www.facebook.com/people/Aio-Phil-Travel-and-Tours/61560532989512/" target="_blank">Book Now</a>
     </div>
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 AIO Phil Travel and Tours. All Rights Reserved.</p>
-        <p>Travel with us for experiences that last a lifetime.</p>
-        <p>Explore more: <a href="https://www.facebook.com/people/Aio-Phil-Travel-and-Tours/61560532989512/" target="_blank">Visit our Facebook Page</a></p>
-    </footer>
-</body>
-</html>
+        <p>Travel
