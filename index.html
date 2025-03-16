@@ -10,84 +10,93 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5dc; /* Beige background for an appealing aesthetic */
-            color: #333; /* Dark text for readability */
+            background-color: #f5f5dc; /* Beige background */
+            color: #4f4b42; /* Earthy, pleasing text color */
             scroll-behavior: smooth;
         }
         header {
-            background-color: #e8d8c3; /* Beige tone for header */
-            color: #333;
+            background-color: #e8d8c3; /* Subtle beige for header */
+            color: #4f4b42;
             text-align: center;
-            padding: 3rem;
+            padding: 4rem;
         }
         header h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
         }
         header p {
             font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
         }
         nav {
             background-color: #d2b48c; /* Tan navigation bar */
             position: sticky;
             top: 0;
             z-index: 1000;
-            padding: 1rem;
+            padding: 1rem 0;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         nav a {
-            color: #333;
+            color: #4f4b42;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 20px;
             font-weight: bold;
             font-size: 1.1rem;
             transition: color 0.3s;
         }
         nav a:hover {
-            color: #805a3b; /* Darker beige tone on hover */
+            color: #8b6e50;
         }
         .section {
-            padding: 3rem;
+            padding: 3rem 5rem;
             animation: fadeIn 1s ease-in-out;
         }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
-        .services {
-            background-color: #faf0e6; /* Lighter beige section for contrast */
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 2rem;
-        }
-        .card {
-            background-color: #fff;
+        .why-book, .comfort {
+            background-color: #fdf8f3; /* Lighter beige for sections */
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 2rem;
-            text-align: center;
-            width: 280px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-        }
-        .card h3 {
-            font-size: 1.5rem;
-        }
-        .about {
-            background: linear-gradient(to bottom, #f5f5dc, #faf0e6);
             padding: 3rem;
-            margin: 2rem auto;
-            border-radius: 10px;
-            max-width: 900px;
+            margin-bottom: 3rem;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-        .about p {
+        .why-book h2, .comfort h2 {
+            margin-bottom: 1.5rem;
+        }
+        .why-book p, .comfort p {
             font-size: 1.1rem;
             line-height: 1.8;
             text-align: justify;
+            margin-bottom: 1rem;
+        }
+        .call-to-action {
+            background-color: #e8d8c3;
+            color: #4f4b42;
+            text-align: center;
+            padding: 4rem;
+            border-radius: 10px;
+            margin: 3rem auto;
+        }
+        .call-to-action h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .call-to-action a {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #d2b48c;
+            color: #4f4b42;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .call-to-action a:hover {
+            background-color: #c6a57d;
         }
         .gallery {
             display: flex;
@@ -95,7 +104,6 @@
             scroll-behavior: smooth;
             padding: 2rem;
             gap: 1rem;
-            background-color: #fff8dc; /* Pale beige for the gallery */
         }
         .gallery img {
             width: 300px;
@@ -103,38 +111,16 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .comfort {
-            background-color: #efe5d0;
-            text-align: center;
-            padding: 3rem;
-        }
-        .comfort h2 {
-            margin-bottom: 1.5rem;
-        }
-        .comfort p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
         .contact {
-            background-color: #f5deb3; /* Wheat color for contrast */
             padding: 3rem;
             text-align: center;
-        }
-        .contact h3 {
-            margin-bottom: 1rem;
-        }
-        .contact p {
-            margin-bottom: 0.5rem;
+            background-color: #fdf8f3;
         }
         footer {
-            background-color: #d2b48c; /* Tan footer */
-            color: #333;
+            background-color: #d2b48c;
+            color: #4f4b42;
             text-align: center;
             padding: 2rem;
-        }
-        footer a {
-            color: #805a3b;
-            text-decoration: none;
         }
     </style>
 </head>
@@ -142,32 +128,37 @@
     <!-- Header Section -->
     <header>
         <h1>Welcome to Aio Phil Travel and Tours 🌍</h1>
-        <p>Your gateway to unforgettable adventures and seamless journeys</p>
+        <p>
+            Your ultimate gateway to unforgettable adventures and seamless journeys. Explore the beauty of the Philippines with us, where every trip is an opportunity to create lasting memories.
+        </p>
     </header>
 
     <!-- Navigation Bar -->
     <nav>
-        <a href="#services">Services</a>
+        <a href="#why-book">Why Book With Us?</a>
         <a href="#gallery">Gallery</a>
-        <a href="#about">About</a>
         <a href="#comfort">Comfort</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Services Section -->
-    <div class="section services" id="services">
-        <div class="card">
-            <h3>✈️ Adventure Awaits</h3>
-            <p>From breathtaking beaches to cultural explorations, we bring the best tours to you.</p>
-        </div>
-        <div class="card">
-            <h3>🏝️ Relaxation Getaways</h3>
-            <p>Unwind in serene settings and escape the hustle of daily life.</p>
-        </div>
-        <div class="card">
-            <h3>👨‍👩‍👧‍👦 Family Packages</h3>
-            <p>Create cherished memories with your loved ones in every destination.</p>
-        </div>
+    <!-- Why Book With Us Section -->
+    <div class="section why-book" id="why-book">
+        <h2>Why Choose Aio Phil Travel and Tours? 🌟</h2>
+        <p>
+            At Aio Phil Travel and Tours, we go beyond offering travel packages—we deliver experiences that transform your journey into unforgettable adventures. Here’s why we stand out:
+        </p>
+        <p>
+            <strong>Expertly Curated Itineraries:</strong> Our tours are meticulously crafted to capture the essence of each destination. From hidden gems to iconic landmarks, our itineraries are designed to leave you in awe.
+        </p>
+        <p>
+            <strong>Personalized Service:</strong> We believe every traveler is unique. That’s why we tailor our services to suit your preferences, ensuring comfort and convenience every step of the way.
+        </p>
+        <p>
+            <strong>Authentic Experiences:</strong> Immerse yourself in the heart of the Philippines with cultural, historical, and local adventures that offer a deeper connection to each destination.
+        </p>
+        <p>
+            <strong>Reliability and Trust:</strong> As a trusted travel partner, we prioritize your safety and satisfaction. From hassle-free bookings to seamless execution, we deliver on every promise we make.
+        </p>
     </div>
 
     <!-- Gallery Section -->
@@ -178,35 +169,42 @@
         <img src="image4.jpg" alt="Destination 4">
     </div>
 
-    <!-- About Us Section -->
-    <div class="section about" id="about">
-        <h2>Why Travel with Us?</h2>
-        <p>Welcome to AIO Phil Travel and Tours, where your journey begins with a promise of unforgettable experiences and seamless adventures. As a premier travel agency dedicated to curating exceptional journeys across the Philippines, we pride ourselves on offering diverse tours for every traveler. Whether you're craving the tranquility of pristine beaches, the thrill of exploring vibrant cities, or the cultural richness of heritage sites, we ensure you travel in comfort and style.</p>
+    <!-- Comfort and Convenience Section -->
+    <div class="section comfort" id="comfort">
+        <h2>Travel in Comfort and Style 🛫</h2>
+        <p>
+            Imagine a journey where every detail is taken care of for you. With Aio Phil Travel and Tours, you'll experience unparalleled comfort, luxury, and convenience.
+        </p>
+        <p>
+            Say goodbye to the stress of planning—our team ensures your trip is seamless from start to finish. Whether you’re traveling solo, with family, or in a group, we cater to all your needs with precision and care.
+        </p>
+        <p>
+            With premium accommodations, reliable transportation, and experienced tour guides, your journey with us will be truly memorable.
+        </p>
     </div>
 
-    <!-- Comfort Section -->
-    <div class="comfort" id="comfort">
-        <h2>Comfort and Convenience</h2>
-        <p>Imagine a travel experience where every detail is taken care of, from tailored itineraries to hassle-free bookings. With Aio Phil Travel, you'll enjoy luxury, affordability, and unmatched customer care. Let us turn every trip into a seamless and unforgettable adventure.</p>
+    <!-- Call-to-Action Section -->
+    <div class="call-to-action">
+        <h2>Let’s Plan Your Dream Getaway! ✨</h2>
+        <a href="https://www.facebook.com/people/Aio-Phil-Travel-and-Tours/61560532989512/" target="_blank">Book Now</a>
     </div>
 
     <!-- Contact Section -->
     <div class="section contact" id="contact">
-        <h3>📍 Visit Us</h3>
+        <h3>📍 Location</h3>
         <p>Dasmariñas, Cavite, Philippines</p>
-        <h3>📞 Call Us</h3>
+        <h3>📞 Contact Us</h3>
         <p>+63 945 986 9989</p>
-        <h3>📧 Email Us</h3>
+        <h3>📧 Email</h3>
         <p><a href="mailto:aiotraveltours@gmail.com">aiotraveltours@gmail.com</a></p>
-        <h3>💬 Follow Us</h3>
+        <h3>💬 Social Media</h3>
         <p>Facebook: <a href="https://www.facebook.com/people/Aio-Phil-Travel-and-Tours/61560532989512/" target="_blank">Aio Phil Travel and Tours</a></p>
-        <p>Instagram: @aiophiltravelandtours_</p>
     </div>
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Aio Phil Travel and Tours. All Rights Reserved.</p>
-        <p>Travel with us for an adventure of a lifetime 🌟</p>
+        <p>&copy; 2024 Aio Phil Travel and Tours. All Rights Reserved.</p>
+        <p>Travel with us for experiences that last a lifetime.</p>
     </footer>
 </body>
 </html>
