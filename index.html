@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aio Phil Travel and Tours</title>
+    <title>AIO Phil Travel and Tours</title>
     <style>
         /* General Styles */
         body {
@@ -22,7 +22,7 @@
         }
         header h1 {
             font-size: 3rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
         header p {
             font-size: 1.2rem;
@@ -76,17 +76,17 @@
             transform: scale(1.05);
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
         }
-        .contacts {
+        .contacts, .faqs {
             background-color: #fbf8ef; /* Light cream */
             padding: 3rem;
             text-align: center;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-        .contacts h2 {
+        .contacts h2, .faqs h2 {
             margin-bottom: 2rem;
         }
-        .contacts p {
+        .contacts p, .faqs p {
             font-size: 1.1rem;
             line-height: 1.6;
             margin: 0.5rem 0;
@@ -98,6 +98,17 @@
         }
         .contacts a:hover {
             color: #a49681; /* Softer muted beige */
+        }
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+        .faq-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .faq-item p {
+            font-size: 1rem;
+            text-align: justify;
         }
         .button {
             display: inline-block;
@@ -124,9 +135,9 @@
 <body>
     <!-- Header Section -->
     <header>
-        <h1>Welcome to Aio Phil Travel and Tours 🌍</h1>
+        <h1>Less Hassle with AIO Phil Travel and Tours 🌍</h1>
         <p>
-            Your ultimate gateway to unforgettable adventures and seamless journeys. Explore the beauty of the Philippines with us, where every trip is an opportunity to create lasting memories.
+            Welcome to AIO Phil Travel and Tours, where your journey begins with a promise of unforgettable experiences and seamless adventures. Explore the beauty of the Philippines with us and create lasting memories.
         </p>
     </header>
 
@@ -134,6 +145,7 @@
     <nav>
         <a href="#gallery">Gallery</a>
         <a href="#contacts">Contact Us</a>
+        <a href="#faqs">FAQs</a>
     </nav>
 
     <!-- Gallery Section -->
@@ -150,7 +162,7 @@
     <!-- Contact Section -->
     <div class="section contacts" id="contacts">
         <h2>📞 Contact Us</h2>
-        <p><strong>📍 Address:</strong> Dasmariñas, Cavite, Philippines</p>
+        <p><strong>📍 Address:</strong> Cavite, Dasmariñas, Philippines</p>
         <p><strong>📞 Phone:</strong> +63 945 986 9989</p>
         <p><strong>📧 Email:</strong> <a href="mailto:aiotraveltours@gmail.com">aiotraveltours@gmail.com</a></p>
         <p><strong>💬 Facebook:</strong> <a href="https://www.facebook.com/people/Aio-Phil-Travel-and-Tours/61560532989512/" target="_blank">Aio Phil Travel and Tours</a></p>
@@ -158,9 +170,30 @@
         <a class="button" href="https://www.facebook.com/people/Aio-Phil-Travel-and-Tours/61560532989512/" target="_blank">Book Now</a>
     </div>
 
+    <!-- FAQ Section -->
+    <div class="section faqs" id="faqs">
+        <h2>FAQs: Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>What makes AIO Phil Travel and Tours unique?</h3>
+            <p>We provide meticulously curated tours that focus on comfort, convenience, and unforgettable experiences. Whether it's pristine beaches or cultural exploration, we have it all covered.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How do I book a tour?</h3>
+            <p>You can book a tour by contacting us via phone, email, or our Facebook page. Alternatively, click the "Book Now" button above to get started.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can I customize my itinerary?</h3>
+            <p>Absolutely! We specialize in creating personalized travel experiences that cater to your unique preferences and interests.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Do you provide group discounts?</h3>
+            <p>Yes, we offer special deals and discounts for group bookings. Feel free to reach out to us for more details.</p>
+        </div>
+    </div>
+
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Aio Phil Travel and Tours. All Rights Reserved.</p>
+        <p>&copy; 2024 AIO Phil Travel and Tours. All Rights Reserved.</p>
         <p>Travel with us for experiences that last a lifetime.</p>
     </footer>
 </body>
