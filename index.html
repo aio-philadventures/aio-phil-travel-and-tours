@@ -76,37 +76,30 @@
             transform: scale(1.05);
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
         }
-        .contacts, .faqs {
+        .why-book, .faqs, .testimonials {
             background-color: #fbf8ef; /* Light cream */
             padding: 3rem;
             text-align: center;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 2rem auto;
         }
-        .contacts h2, .faqs h2 {
+        .why-book h2, .faqs h2, .testimonials h2 {
             margin-bottom: 2rem;
         }
-        .contacts p, .faqs p {
+        .why-book p, .faqs p, .testimonials p {
             font-size: 1.1rem;
             line-height: 1.6;
             margin: 0.5rem 0;
         }
-        .contacts a {
-            color: #5e5c55;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .contacts a:hover {
-            color: #a49681; /* Softer muted beige */
-        }
-        .faq-item {
+        .faq-item, .testimonial-item {
             margin-bottom: 1.5rem;
         }
-        .faq-item h3 {
+        .faq-item h3, .testimonial-item h3 {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
         }
-        .faq-item p {
+        .faq-item p, .testimonial-item p {
             font-size: 1rem;
             text-align: justify;
         }
@@ -144,13 +137,14 @@
     <!-- Navigation Bar -->
     <nav>
         <a href="#gallery">Gallery</a>
-        <a href="#contacts">Contact Us</a>
+        <a href="#why-book">Why Book With Us?</a>
         <a href="#faqs">FAQs</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact Us</a>
     </nav>
 
     <!-- Gallery Section -->
     <div class="gallery" id="gallery">
-        <!-- Destination 1: Clickable Image -->
         <a href="https://www.facebook.com/photo.php?fbid=122109437798351099&set=pb.61560532989512.-2207520000&type=3" target="_blank">
             <img src="beach.jpg" alt="Beautiful Beach Destination">
         </a>
@@ -159,42 +153,67 @@
         <img src="destination4.jpg" alt="Heritage Site">
     </div>
 
-    <!-- Contact Section -->
-    <div class="section contacts" id="contacts">
-        <h2>📞 Contact Us</h2>
-        <p><strong>📍 Address:</strong> Cavite, Dasmariñas, Philippines</p>
-        <p><strong>📞 Phone:</strong> +63 945 986 9989</p>
-        <p><strong>📧 Email:</strong> <a href="mailto:aiotraveltours@gmail.com">aiotraveltours@gmail.com</a></p>
-        <p><strong>💬 Facebook:</strong> <a href="https://www.facebook.com/people/Aio-Phil-Travel-and-Tours/61560532989512/" target="_blank">Aio Phil Travel and Tours</a></p>
-        <p><strong>📷 Instagram:</strong> @aiophiltravelandtours_</p>
-        <a class="button" href="https://www.facebook.com/people/Aio-Phil-Travel-and-Tours/61560532989512/" target="_blank">Book Now</a>
+    <!-- Why Book With Us Section -->
+    <div class="section why-book" id="why-book">
+        <h2>Why Choose AIO Phil Travel and Tours? 🌟</h2>
+        <p>
+            AIO Phil Travel and Tours is one of the best travel and tour services in the Philippines. We pride ourselves on making travel easy, exciting, and stress-free for everyone!
+        </p>
+        <p>
+            From meticulously curated itineraries to personalized customer care, we ensure every journey with us is as smooth as it is unforgettable. Our team of travel experts is here to make your dream vacation a reality.
+        </p>
+        <p>
+            With us, you’ll enjoy exclusive deals, premium accommodations, and the joy of exploring new destinations, all without the hassle of planning and coordination. Discover the difference with AIO Phil Travel and Tours!
+        </p>
     </div>
 
     <!-- FAQ Section -->
     <div class="section faqs" id="faqs">
         <h2>FAQs: Frequently Asked Questions</h2>
         <div class="faq-item">
-            <h3>What makes AIO Phil Travel and Tours unique?</h3>
-            <p>We provide meticulously curated tours that focus on comfort, convenience, and unforgettable experiences. Whether it's pristine beaches or cultural exploration, we have it all covered.</p>
+            <h3>How easy is it to book with AIO Phil Travel and Tours?</h3>
+            <p>It’s incredibly easy! You can contact us via phone, email, or social media to reserve your spot. Our friendly team is always ready to assist you!</p>
         </div>
         <div class="faq-item">
-            <h3>How do I book a tour?</h3>
-            <p>You can book a tour by contacting us via phone, email, or our Facebook page. Alternatively, click the "Book Now" button above to get started.</p>
+            <h3>What services do you offer?</h3>
+            <p>We provide diverse travel packages, including beach getaways, heritage tours, city adventures, and more. Our packages cater to solo travelers, families, and groups.</p>
         </div>
         <div class="faq-item">
-            <h3>Can I customize my itinerary?</h3>
-            <p>Absolutely! We specialize in creating personalized travel experiences that cater to your unique preferences and interests.</p>
+            <h3>Are your tours customizable?</h3>
+            <p>Yes! We specialize in crafting personalized tours tailored to your preferences and interests. Let us know your travel goals, and we’ll make them happen.</p>
         </div>
-        <div class="faq-item">
-            <h3>Do you provide group discounts?</h3>
-            <p>Yes, we offer special deals and discounts for group bookings. Feel free to reach out to us for more details.</p>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="section testimonials" id="testimonials">
+        <h2>What Our Customers Say ❤️</h2>
+        <div class="testimonial-item">
+            <h3>Maria S.</h3>
+            <p>"Booking with AIO Phil Travel and Tours was the best decision I made this year. The team was professional and friendly, and I had the trip of a lifetime!"</p>
         </div>
+        <div class="testimonial-item">
+            <h3>Juan D.</h3>
+            <p>"Seamless and stress-free! From the moment I contacted them to the end of my trip, everything was handled perfectly. Highly recommended!"</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section contacts" id="contact">
+        <h2>📞 Contact Us</h2>
+        <p><strong>📍 Address:</strong> Cavite, Dasmariñas, Philippines</p>
+        <p><strong>📞 Phone:</strong> +63 945 986 9989</p>
+        <p><strong>📧 Email:</strong> <a href
+        <p><strong>📧 Email:</strong> <a href="mailto:aiotraveltours@gmail.com">aiotraveltours@gmail.com</a></p>
+        <p><strong>💬 Facebook:</strong> <a href="https://www.facebook.com/people/Aio-Phil-Travel-and-Tours/61560532989512/" target="_blank">Aio Phil Travel and Tours</a></p>
+        <p><strong>📷 Instagram:</strong> @aiophiltravelandtours_</p>
+        <a class="button" href="https://www.facebook.com/people/Aio-Phil-Travel-and-Tours/61560532989512/" target="_blank">Book Now</a>
     </div>
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 AIO Phil Travel and Tours. All Rights Reserved.</p>
         <p>Travel with us for experiences that last a lifetime.</p>
+        <p>Explore more: <a href="https://www.facebook.com/people/Aio-Phil-Travel-and-Tours/61560532989512/" target="_blank">Visit our Facebook Page</a></p>
     </footer>
 </body>
 </html>
